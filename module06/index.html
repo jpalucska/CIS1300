@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<style>
+   
+    table, th  {
+        table-layout: fixed;
+        width:100%;
+        min-height: 100vh;
+        max-height: 100%;
+        
+
+
+        
+    }
+
+    #header {
+       
+        height:200px;
+        vertical-align: top;
+        text-align: center;
+        background-color: purple
+    }
+    #footer{
+        height:200px;
+        vertical-align: top;
+        text-align: center;
+        background-color: purple
+    }
+    #main-content{
+        min-width:600px;
+        text-align: left;
+        vertical-align: top;
+        background-color: orange;
+    }
+    #left-sidebar {
+        width:20%;
+        vertical-align: top;
+        background-color: lightblue;
+
+    }
+    #right-sidebar {
+        width:20%;
+        vertical-align: top;
+        background-color: lightblue;
+
+    }
+    body {
+        margin:0;
+        padding:0;
+        text-transform: uppercase;
+    }
+</style>
+<body>
+    <table style = width:100%>
+        <tr>
+            <th id = header colspan ="3"  >Header</th>
+        </tr>
+        <tr>
+            <th id = left-sidebar>Left Sidebar</th>
+            <th id = main-content>Main Content</th>
+            <th id = right-sidebar>Right Sidebar</th>
+        </tr>
+        <tr>
+            <th id = footer colspan ="3">Footer</th></th>
+        </tr>
+
+    </table>
+</body>
+
+</html>
