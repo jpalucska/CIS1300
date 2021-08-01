@@ -1,0 +1,19 @@
+#box-one{
+    margin:2em;
+    padding:2em;
+    border: 1em solid purple;
+    width:30em;
+    background-color: gold;
+    box-sizing: content-box;
+}
+
+
+#box-two{
+    box-sizing: border-box;
+    margin:2em;
+    padding:2em;
+    border: 1em solid purple;
+    width:30em;
+    background-color: gold;
+    
+}
