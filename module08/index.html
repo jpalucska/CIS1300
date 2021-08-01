@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+<style>
+    body {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+            "header header header"
+            "left main right"
+            "footer footer footer";
+        min-height: 100vh;
+        margin:0;
+        padding:0;
+        background-color: white;
+    }
+
+    header {
+        grid-area: header;
+        background-color: purple;
+    }
+
+    aside {
+        grid-area:left;
+        background-color:brown;
+    }
+    main {
+        grid-area: main;
+        background-color: orange;
+    }
+    
+    aside:last-of-type {
+        grid-area:right;
+        
+    }
+    footer {
+        grid-area: footer;
+        background-color: purple;
+    }
+    
+</style>
+</head>
+
+<body>
+    <header><h1>HEADER</h1></header>
+    <aside><p>LEFT</p></aside>
+    <main><p>MAIN</p></main>
+    <aside><p>RIGHT</p></aside>    
+    <footer><p>FOOTER</p></footer>
+</body>
+</html>
